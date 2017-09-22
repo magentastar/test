@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:NamingModel="http:///com/ibm/db/models/naming/naming.ecore">
+  <NamingModel:NamingStandard xmi:id="_9zjMsEplEd2Usp4lMu9r5A" name="NamingStandard" glossaries="_9zjMsUplEd2Usp4lMu9r5A"/>
+  <NamingModel:Glossary xmi:id="_9zjMsUplEd2Usp4lMu9r5A" name=" Glossary" namingStandard="_9zjMsEplEd2Usp4lMu9r5A">
+    <words xmi:id="_j2gJ8EpnEd2Usp4lMu9r5A" name="CREDITCARD" abbreviation="CRDTCRD" classification="PRIME" modifier="true"/>
+    <words xmi:id="_0D8B4EpnEd2Usp4lMu9r5A" name="CUSTOMER" abbreviation="CUST" classification="PRIME" modifier="true"/>
+    <words xmi:id="_3OvxAEpnEd2Usp4lMu9r5A" name="INVOICE" abbreviation="INV" classification="CLASS"/>
+    <words xmi:id="_98HA4EpnEd2Usp4lMu9r5A" name="ORDER" abbreviation="ORD" classification="PRIME"/>
+    <words xmi:id="_BLXyMEpoEd2Usp4lMu9r5A" name="STATE" abbreviation="STATE" classification="CLASS"/>
+    <words xmi:id="_LadmQEuCEd2jTfhuQuKKTg" name="PARTNER" abbreviation="PTNR" classification="PRIME" modifier="true"/>
+    <words xmi:id="_OLLaYEuCEd2jTfhuQuKKTg" name="ACTIVITY" abbreviation="ACTY" classification="CLASS"/>
+    <words xmi:id="_TEFDAEuCEd2jTfhuQuKKTg" name="CONTACT" abbreviation="CNTCT" classification="CLASS"/>
+    <words xmi:id="_geCGsEuCEd2jTfhuQuKKTg" name="TAX" abbreviation="TAX" modifier="true"/>
+    <words xmi:id="_Nnwu0EuDEd2jTfhuQuKKTg" name="OF" abbreviation="OF" modifier="true"/>
+    <words xmi:id="_Q7o6YEuDEd2jTfhuQuKKTg" name="CODE" abbreviation="CODE" classification="CLASS"/>
+    <words xmi:id="_YKIhYEuDEd2jTfhuQuKKTg" name="SUBTOTAL" abbreviation="STOT" modifier="true"/>
+    <words xmi:id="_Y5ErAEuDEd2jTfhuQuKKTg" name="METHOD" abbreviation="METH" classification="CLASS" modifier="true"/>
+    <words xmi:id="_NBzsoEuEEd2jTfhuQuKKTg" name="DATE" abbreviation="DATE" classification="CLASS"/>
+    <words xmi:id="_OxQRAEuEEd2jTfhuQuKKTg" name="SHIPPING" abbreviation="SHIP" modifier="true"/>
+    <words xmi:id="_bwr74EuEEd2jTfhuQuKKTg" name="COST" abbreviation="COST" classification="CLASS"/>
+    <words xmi:id="_gT1W8EuEEd2jTfhuQuKKTg" name="PAYMENT" abbreviation="PYMT" modifier="true"/>
+    <words xmi:id="_PD3z8EvlEd2jTfhuQuKKTg" name="STATUS" abbreviation="STAT" classification="CLASS"/>
+    <words xmi:id="_JLM68EvmEd2jTfhuQuKKTg" name="ITEMS" abbreviation="ITEMS" classification="CLASS"/>
+    <words xmi:id="_MpsbEEvmEd2jTfhuQuKKTg" name="PRODUCT" abbreviation="PROD" classification="PRIME"/>
+    <words xmi:id="_ROElMEvmEd2jTfhuQuKKTg" name="TOTAL" abbreviation="TOT" modifier="true"/>
+    <words xmi:id="_fKZ9MEvmEd2jTfhuQuKKTg" name="ID" abbreviation="ID" classification="CLASS"/>
+    <words xmi:id="_q3E_sEvmEd2jTfhuQuKKTg" name="SERVICE" abbreviation="SERV" modifier="true"/>
+    <words xmi:id="_tfxgQEvmEd2jTfhuQuKKTg" name="EXPIRATION" abbreviation="EXP" modifier="true"/>
+    <words xmi:id="_89t08EvmEd2jTfhuQuKKTg" name="PROVINCE" abbreviation="PROV" modifier="true"/>
+    <words xmi:id="_B1nYAEvnEd2jTfhuQuKKTg" name="RATE" abbreviation="RATE" classification="CLASS"/>
+    <words xmi:id="_JLeLQEvnEd2jTfhuQuKKTg" name="FIRST" abbreviation="FRST" modifier="true"/>
+    <words xmi:id="_W4waoEvnEd2jTfhuQuKKTg" name="ADDRESS2" abbreviation="ADDR2" classification="CLASS"/>
+    <words xmi:id="_cDk5sEvnEd2jTfhuQuKKTg" name="POSTAL" abbreviation="POST" modifier="true"/>
+    <words xmi:id="_n2g8QEvnEd2jTfhuQuKKTg" name="ZONE" abbreviation="ZONE" classification="CLASS"/>
+    <words xmi:id="_qM4WsEvnEd2jTfhuQuKKTg" name="COUNTRY" abbreviation="CTRY" modifier="true"/>
+    <words xmi:id="_ttv1YEvnEd2jTfhuQuKKTg" name="PHONE" abbreviation="PHN" modifier="true"/>
+    <words xmi:id="_yMKhcEvnEd2jTfhuQuKKTg" name="INFO" abbreviation="INFO" classification="CLASS"/>
+    <words xmi:id="_1C3BwEvnEd2jTfhuQuKKTg" name="EMAIL" abbreviation="EMAIL" classification="CLASS"/>
+    <words xmi:id="_3u1f0EvnEd2jTfhuQuKKTg" name="GENDER" abbreviation="GNDR" modifier="true"/>
+    <words xmi:id="_8_eTAEvnEd2jTfhuQuKKTg" name="COMPANY" abbreviation="CO" modifier="true"/>
+    <words xmi:id="_EWOeIEvoEd2jTfhuQuKKTg" name="SALES" abbreviation="SALES" classification="CLASS"/>
+    <words xmi:id="_J1KzEEvoEd2jTfhuQuKKTg" name="CITY" abbreviation="CITY" classification="CLASS"/>
+    <words xmi:id="_EQbfcEypEd2mMJMhesDrYQ" name="ADDRESS1" abbreviation="ADDR1" classification="CLASS"/>
+    <words xmi:id="_SJgnwEysEd2mMJMhesDrYQ" name="PRODUCTS" abbreviation="PRODS" classification="CLASS"/>
+    <words xmi:id="_gjgOUEy7Ed2I7YoMzXPT8w" name="NUMBER" abbreviation="NBR" classification="CLASS" modifier="true"/>
+    <words xmi:id="_IheiQEzHEd2cqKD91Pz7Hw" name="LAST" abbreviation="LAST"/>
+    <words xmi:id="_eHt5wFduEd2kd-nILtvvEA" name="ACCOUNT" abbreviation="ACCT" classification="CLASS"/>
+    <words xmi:id="_V9-KcFd5Ed2kd-nILtvvEA" name="NAME" abbreviation="NAME" classification="CLASS"/>
+  </NamingModel:Glossary>
+</xmi:XMI>

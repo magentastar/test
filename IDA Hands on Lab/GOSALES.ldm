@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/7.5.2.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LogicalDataModel="http:///com/ibm/db/models/logical/logical.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation">
+  <LogicalDataModel:Package xmi:id="_I-hyAEpTEd2fkP5NpSh0ow" name="Customer and Partner" children="_zsXmgEpTEd2fkP5NpSh0ow _pd_UsEpYEd2fkP5NpSh0ow">
+    <eAnnotations xmi:id="_byO08Ew9Ed2kasuaQ3IIkQ" source="DATABASE_AUTHOR_EANNOTATION">
+      <details xmi:id="_byO08Uw9Ed2kasuaQ3IIkQ" key="DATABASE_AUTHOR_EANNOTATION_NAME" value="IBM User"/>
+      <details xmi:id="_c3yu0Ew9Ed2kasuaQ3IIkQ" key="DATABASE_AUTHOR_EANNOTATION_COMPANY" value="IBM"/>
+      <details xmi:id="_dP3QkEw9Ed2kasuaQ3IIkQ" key="DATABASE_AUTHOR_EANNOTATION_VERSION" value="1.0"/>
+      <details xmi:id="_f9dfQEw9Ed2kasuaQ3IIkQ" key="DATABASE_AUTHOR_EANNOTATION_COPYRIGHT" value="2009"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_hb7jMe1xEd2LA9bRLQ0qOg" source="DATABASE_DOCUMENTATION_EANNOTATION">
+      <details xmi:id="_hb7jMu1xEd2LA9bRLQ0qOg" key="DATABASE_DOCUMENTATION_EANNOTATION_CONTENT" value="This model describes all major entities &#xD;&#xA;involved in the GOSALES partner and &#xD;&#xA;customer activities&#xD;&#xA;"/>
+    </eAnnotations>
+  </LogicalDataModel:Package>
+  <LogicalDataModel:Package xmi:id="_zsXmgEpTEd2fkP5NpSh0ow" name="Partner" parent="_I-hyAEpTEd2fkP5NpSh0ow" contents="_8QJI8EpUEd2fkP5NpSh0ow _8QJJAkpUEd2fkP5NpSh0ow"/>
+  <LogicalDataModel:Entity xmi:id="_8QJI8EpUEd2fkP5NpSh0ow" name="PARTNER CONTACT" package="_zsXmgEpTEd2fkP5NpSh0ow" relationshipEnds="_8QJJAEpUEd2fkP5NpSh0ow">
+    <attributes xmi:id="_8QJI8UpUEd2fkP5NpSh0ow" name="PARTNER CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_8QJI8kpUEd2fkP5NpSh0ow" name="PARTNER COMPANY NAME" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI80pUEd2fkP5NpSh0ow" name="PARTNER FIRST NAME" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI9EpUEd2fkP5NpSh0ow" name="PARTNER LAST NAME" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI9UpUEd2fkP5NpSh0ow" name="PARTNER ADDRESS1" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI90pUEd2fkP5NpSh0ow" name="PARTNER PROVINCE STATE" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI-EpUEd2fkP5NpSh0ow" name="PARTNER POSTAL ZONE" dataType="VARCHAR(100)"/>
+    <attributes xmi:id="_8QJI-UpUEd2fkP5NpSh0ow" name="PARTNER COUNTRY CODE" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI-kpUEd2fkP5NpSh0ow" name="PARTNER CITY" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJI-0pUEd2fkP5NpSh0ow" name="PARTNER INFO" dataType="XML"/>
+    <attributes xmi:id="_8QJI_UpUEd2fkP5NpSh0ow" name="ORDER NUMBER" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_DBLwoExSEd20AZv-tAcqVw" name="PARTNER SALES" dataType="DECIMAL(30,2)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_8QJI_kpUEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_8QJI_UpUEd2fkP5NpSh0ow _8QJI8UpUEd2fkP5NpSh0ow" relationshipEnds="_8QJJAEpUEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Relationship xmi:id="_8QJI_0pUEd2fkP5NpSh0ow" name="PARTNER ACTIVITY_CONTACT_FK" owningEntity="_8QJJAkpUEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_8QJJAEpUEd2fkP5NpSh0ow" deleteAction="RESTRICT" entity="_8QJI8EpUEd2fkP5NpSh0ow" key="_8QJI_kpUEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_8QJJAUpUEd2fkP5NpSh0ow" cardinality="ZERO_TO_MANY" entity="_8QJJAkpUEd2fkP5NpSh0ow" key="_8QJJDkpUEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Entity xmi:id="_8QJJAkpUEd2fkP5NpSh0ow" name="PARTNER ACTIVITY" package="_zsXmgEpTEd2fkP5NpSh0ow" relationshipEnds="_8QJJAUpUEd2fkP5NpSh0ow _869CMk4SEd2v74W0HyGM3Q _Er4n4k4TEd2v74W0HyGM3Q" relationships="_8QJI_0pUEd2fkP5NpSh0ow _869CME4SEd2v74W0HyGM3Q _Er4n4E4TEd2v74W0HyGM3Q">
+    <attributes xmi:id="_8QJJA0pUEd2fkP5NpSh0ow" name="PARTNER CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_8QJJBUpUEd2fkP5NpSh0ow" name="ORDER NUMBER" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_8QJJB0pUEd2fkP5NpSh0ow" name="ORDER SUBTOTAL COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_8QJJCEpUEd2fkP5NpSh0ow" name="ORDER SHIPPING COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_8QJJCUpUEd2fkP5NpSh0ow" name="ORDER TAX COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_8QJJCkpUEd2fkP5NpSh0ow" name="ORDER TOTAL COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_8QJJC0pUEd2fkP5NpSh0ow" name="ORDER STATUS" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_8QJJDEpUEd2fkP5NpSh0ow" name="PARTNER INVOICE" dataType="XML"/>
+    <attributes xmi:id="_l21IAFgSEd2kd-nILtvvEA" name="CUSTOMER CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_Prw-kFgTEd2kd-nILtvvEA" name="PARTNER CUSTOMER CODE" dataType="VARCHAR(10)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_8QJJDUpUEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_8QJJBUpUEd2fkP5NpSh0ow _8QJJA0pUEd2fkP5NpSh0ow _l21IAFgSEd2kd-nILtvvEA"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_8QJJDkpUEd2fkP5NpSh0ow" name="PARTNER ACTIVITY_PARTNER CONTACT_FK" attributes="_8QJJBUpUEd2fkP5NpSh0ow _8QJJA0pUEd2fkP5NpSh0ow" relationshipEnds="_8QJJAUpUEd2fkP5NpSh0ow"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_869CM04SEd2v74W0HyGM3Q" name="ForeignKey1" attributes="_l21IAFgSEd2kd-nILtvvEA" relationshipEnds="_869CMk4SEd2v74W0HyGM3Q"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_Er4n404TEd2v74W0HyGM3Q" name="ForeignKey2" attributes="_l21IAFgSEd2kd-nILtvvEA _8QJJBUpUEd2fkP5NpSh0ow" relationshipEnds="_Er4n4k4TEd2v74W0HyGM3Q"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Package xmi:id="_pd_UsEpYEd2fkP5NpSh0ow" name="Customer" parent="_I-hyAEpTEd2fkP5NpSh0ow" contents="_FrwgEEpbEd2fkP5NpSh0ow _FrwgKkpbEd2fkP5NpSh0ow _FrwgRkpbEd2fkP5NpSh0ow _FrwgTkpbEd2fkP5NpSh0ow">
+    <eAnnotations xmi:id="_2HGxwO1xEd2LA9bRLQ0qOg" source="diagram">
+      <contents xsi:type="datanotation:DataDiagram" xmi:id="_2HP7sO1xEd2LA9bRLQ0qOg" type="IE_CrowFoot" name="Customer" viewKind="ProjectExplorer" notation="IE_CrowFoot">
+        <children xmi:id="_5DmYEO1xEd2LA9bRLQ0qOg" element="_FrwgKkpbEd2fkP5NpSh0ow">
+          <children xmi:id="_5DviAO1xEd2LA9bRLQ0qOg" type="IEEntityName">
+            <children xmi:id="_5D5TAO1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+            <children xmi:id="_5D5TAe1xEd2LA9bRLQ0qOg" type="Description"/>
+            <styles xsi:type="notation:FontStyle" xmi:id="_5DviAe1xEd2LA9bRLQ0qOg"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_5DviAu1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_5D5TAu1xEd2LA9bRLQ0qOg" type="entity.ie.key.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_5D5TA-1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_5D5TBO1xEd2LA9bRLQ0qOg" type="entity.ie.nonkey.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_5D5TBe1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <styles xsi:type="datanotation:TableStyle" xmi:id="_5DmYEe1xEd2LA9bRLQ0qOg"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_5DmYEu1xEd2LA9bRLQ0qOg" x="6657" y="951"/>
+        </children>
+        <children xmi:id="_7tKbUO1xEd2LA9bRLQ0qOg" element="_FrwgRkpbEd2fkP5NpSh0ow">
+          <children xmi:id="_7tKbU-1xEd2LA9bRLQ0qOg" type="IEEntityName">
+            <children xmi:id="_7tKbVu1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+            <children xmi:id="_7tKbV-1xEd2LA9bRLQ0qOg" type="Description"/>
+            <styles xsi:type="notation:FontStyle" xmi:id="_7tKbVO1xEd2LA9bRLQ0qOg"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7tKbVe1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_7tKbWO1xEd2LA9bRLQ0qOg" type="entity.ie.key.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_7tKbWe1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_7tKbWu1xEd2LA9bRLQ0qOg" type="entity.ie.nonkey.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_7tKbW-1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <styles xsi:type="datanotation:TableStyle" xmi:id="_7tKbUe1xEd2LA9bRLQ0qOg"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7tKbUu1xEd2LA9bRLQ0qOg" x="951" y="7608"/>
+        </children>
+        <children xmi:id="_9NbUMO1xEd2LA9bRLQ0qOg" element="_FrwgTkpbEd2fkP5NpSh0ow">
+          <children xmi:id="_9NbUM-1xEd2LA9bRLQ0qOg" type="IEEntityName">
+            <children xmi:id="_9NbUNu1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+            <children xmi:id="_9NbUN-1xEd2LA9bRLQ0qOg" type="Description"/>
+            <styles xsi:type="notation:FontStyle" xmi:id="_9NbUNO1xEd2LA9bRLQ0qOg"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9NbUNe1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_9NbUOO1xEd2LA9bRLQ0qOg" type="entity.ie.key.compartment">
+            <children xmi:id="_gpuO4H2XEd6YXe6x9Xl9ww" type="IEEntityKey" element="_FrwgUEpbEd2fkP5NpSh0ow">
+              <children xmi:id="_gpuO432XEd6YXe6x9Xl9ww" type="DiagramName"/>
+              <children xmi:id="_gpuO5H2XEd6YXe6x9Xl9ww" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_gpuO4X2XEd6YXe6x9Xl9ww"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_gpuO4n2XEd6YXe6x9Xl9ww"/>
+            </children>
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_9NbUOe1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_9NbUOu1xEd2LA9bRLQ0qOg" type="entity.ie.nonkey.compartment">
+            <children xmi:id="_Id15xH2XEd6YXe6x9Xl9ww" type="IEEntityNonKey" element="_FrwgUUpbEd2fkP5NpSh0ow">
+              <children xmi:id="_Id15x32XEd6YXe6x9Xl9ww" type="DiagramName"/>
+              <children xmi:id="_Id15yH2XEd6YXe6x9Xl9ww" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_Id15xX2XEd6YXe6x9Xl9ww"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_Id15xn2XEd6YXe6x9Xl9ww"/>
+            </children>
+            <children xmi:id="_Id15yX2XEd6YXe6x9Xl9ww" type="IEEntityNonKey" element="_kTe0AFgUEd2nfKJx9YdYHA">
+              <children xmi:id="_Id15zH2XEd6YXe6x9Xl9ww" type="DiagramName"/>
+              <children xmi:id="_Id15zX2XEd6YXe6x9Xl9ww" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_Id15yn2XEd6YXe6x9Xl9ww"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_Id15y32XEd6YXe6x9Xl9ww"/>
+            </children>
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_9NbUO-1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <styles xsi:type="datanotation:TableStyle" xmi:id="_9NbUMe1xEd2LA9bRLQ0qOg"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9NbUMu1xEd2LA9bRLQ0qOg" x="11377" y="9789"/>
+        </children>
+        <children xmi:id="_9dz5kO1xEd2LA9bRLQ0qOg" element="_FrwgEEpbEd2fkP5NpSh0ow">
+          <children xmi:id="_9dz5k-1xEd2LA9bRLQ0qOg" type="IEEntityName">
+            <children xmi:id="_9dz5lu1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+            <children xmi:id="_9dz5l-1xEd2LA9bRLQ0qOg" type="Description"/>
+            <styles xsi:type="notation:FontStyle" xmi:id="_9dz5lO1xEd2LA9bRLQ0qOg"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9dz5le1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_9dz5mO1xEd2LA9bRLQ0qOg" type="entity.ie.key.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_9dz5me1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <children xmi:id="_9dz5mu1xEd2LA9bRLQ0qOg" type="entity.ie.nonkey.compartment">
+            <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_9dz5m-1xEd2LA9bRLQ0qOg"/>
+          </children>
+          <styles xsi:type="datanotation:TableStyle" xmi:id="_9dz5ke1xEd2LA9bRLQ0qOg"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9dz5ku1xEd2LA9bRLQ0qOg" x="6340" y="12046"/>
+        </children>
+        <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_2HP7se1xEd2LA9bRLQ0qOg"/>
+        <styles xsi:type="datanotation:DataCompartmentStyle" xmi:id="_2HP7su1xEd2LA9bRLQ0qOg"/>
+        <styles xsi:type="datanotation:DataDisplayStyle" xmi:id="_2HP7s-1xEd2LA9bRLQ0qOg"/>
+        <styles xsi:type="datanotation:DataDiagramRelationshipStyle" xmi:id="_2HP7tO1xEd2LA9bRLQ0qOg"/>
+        <styles xsi:type="datanotation:DataShapeNameStyle" xmi:id="_2HP7te1xEd2LA9bRLQ0qOg"/>
+        <styles xsi:type="datanotation:DataDiagramFormattingStyle" xmi:id="_2HP7tu1xEd2LA9bRLQ0qOg"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_7t6CMO1xEd2LA9bRLQ0qOg" element="_FrwgPEpbEd2fkP5NpSh0ow" source="_5DmYEO1xEd2LA9bRLQ0qOg" target="_7tKbUO1xEd2LA9bRLQ0qOg">
+          <children xmi:id="_7t6CM-1xEd2LA9bRLQ0qOg" type="relationship.ie.name">
+            <children xmi:id="_7uDzMO1xEd2LA9bRLQ0qOg" type="IERelationship.name">
+              <children xmi:id="_7uDzM-1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_7uDzNO1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_7uDzMe1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7uDzMu1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_7t6CNO1xEd2LA9bRLQ0qOg" y="-186"/>
+          </children>
+          <children xmi:id="_7uDzNe1xEd2LA9bRLQ0qOg" type="relationship.ie.child.name">
+            <children xmi:id="_7uDzN-1xEd2LA9bRLQ0qOg" type="IERelationship.childname">
+              <children xmi:id="_7uDzOu1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_7uDzO-1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_7uDzOO1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7uDzOe1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_7uDzNu1xEd2LA9bRLQ0qOg" x="-265" y="-662"/>
+          </children>
+          <children xmi:id="_7uDzPO1xEd2LA9bRLQ0qOg" type="relationship.ie.parent.name">
+            <children xmi:id="_7uDzPu1xEd2LA9bRLQ0qOg" type="IERelationship.parentname">
+              <children xmi:id="_7uDzQe1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_7uDzQu1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_7uDzP-1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7uDzQO1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_7uDzPe1xEd2LA9bRLQ0qOg" y="-397"/>
+          </children>
+          <children xmi:id="_7uDzQ-1xEd2LA9bRLQ0qOg" type="relationship.ie.ri">
+            <children xmi:id="_7uDzRe1xEd2LA9bRLQ0qOg" type="IERelationship.ri">
+              <children xmi:id="_7uDzSO1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_7uDzSe1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_7uDzRu1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_7uDzR-1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_7uDzRO1xEd2LA9bRLQ0qOg" x="-265" y="-662"/>
+          </children>
+          <styles xsi:type="datanotation:DataLineStyle" xmi:id="_7t6CMe1xEd2LA9bRLQ0qOg"/>
+          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_7t6CMu1xEd2LA9bRLQ0qOg" points="[1, 0, 3484, -1586]$[1, 793, 3484, -793]$[-3483, 793, 0, -793]$[-3483, 1586, 0, 0]"/>
+          <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_-adIAO1xEd2LA9bRLQ0qOg" id="(0.24985151,1.0)"/>
+          <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_-adIAe1xEd2LA9bRLQ0qOg" id="(0.49992973,0.0)"/>
+        </edges>
+        <edges xmi:id="_9eaWgO1xEd2LA9bRLQ0qOg" element="_DBsAoFe7Ed2kd-nILtvvEA" source="_7tKbUO1xEd2LA9bRLQ0qOg" target="_9dz5kO1xEd2LA9bRLQ0qOg">
+          <children xmi:id="_9eaWg-1xEd2LA9bRLQ0qOg" type="relationship.ie.name">
+            <children xmi:id="_9eaWhe1xEd2LA9bRLQ0qOg" type="IERelationship.name">
+              <children xmi:id="_9eaWiO1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_9eaWie1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_9eaWhu1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9eaWh-1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_9eaWhO1xEd2LA9bRLQ0qOg" y="-186"/>
+          </children>
+          <children xmi:id="_9eaWiu1xEd2LA9bRLQ0qOg" type="relationship.ie.child.name">
+            <children xmi:id="_9eaWjO1xEd2LA9bRLQ0qOg" type="IERelationship.childname">
+              <children xmi:id="_9eaWj-1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_9eaWkO1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_9eaWje1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9eaWju1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_9eaWi-1xEd2LA9bRLQ0qOg" y="-397"/>
+          </children>
+          <children xmi:id="_9eaWke1xEd2LA9bRLQ0qOg" type="relationship.ie.parent.name">
+            <children xmi:id="_9eaWk-1xEd2LA9bRLQ0qOg" type="IERelationship.parentname">
+              <children xmi:id="_9eaWlu1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_9eaWl-1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_9eaWlO1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9eaWle1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_9eaWku1xEd2LA9bRLQ0qOg" y="-397"/>
+          </children>
+          <children xmi:id="_9eaWmO1xEd2LA9bRLQ0qOg" type="relationship.ie.ri">
+            <children xmi:id="_9eaWmu1xEd2LA9bRLQ0qOg" type="IERelationship.ri">
+              <children xmi:id="_9eaWne1xEd2LA9bRLQ0qOg" type="DiagramName"/>
+              <children xmi:id="_9eaWnu1xEd2LA9bRLQ0qOg" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_9eaWm-1xEd2LA9bRLQ0qOg"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_9eaWnO1xEd2LA9bRLQ0qOg"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_9eaWme1xEd2LA9bRLQ0qOg" x="-265" y="-662"/>
+          </children>
+          <styles xsi:type="datanotation:DataLineStyle" xmi:id="_9eaWge1xEd2LA9bRLQ0qOg"/>
+          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_9eaWgu1xEd2LA9bRLQ0qOg" points="[1, 0, 0, -1586]$[1, 1586, 0, 0]"/>
+          <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_-am5Au1xEd2LA9bRLQ0qOg" id="(0.96725225,1.0)"/>
+          <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_-am5A-1xEd2LA9bRLQ0qOg" id="(0.24991207,0.0)"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+  </LogicalDataModel:Package>
+  <LogicalDataModel:Entity xmi:id="_0J9SsEpZEd2fkP5NpSh0ow" name="Partner Activity"/>
+  <LogicalDataModel:Entity xmi:id="_OM2M0EpaEd2fkP5NpSh0ow" name="Partner Contact"/>
+  <LogicalDataModel:Entity xmi:id="_FrwgEEpbEd2fkP5NpSh0ow" name="CUSTOMER ORDER" package="_pd_UsEpYEd2fkP5NpSh0ow" relationshipEnds="_Er4n4U4TEd2v74W0HyGM3Q _DBsAole7Ed2kd-nILtvvEA _j97-oVgQEd2kd-nILtvvEA _tvKign2UEd6YXe6x9Xl9ww" relationships="_DBsAoFe7Ed2kd-nILtvvEA _tvKigH2UEd6YXe6x9Xl9ww">
+    <attributes xmi:id="_FrwgEUpbEd2fkP5NpSh0ow" name="ORDER NUMBER" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_FrwgEkpbEd2fkP5NpSh0ow" name="ORDER DATE" dataType="DATE"/>
+    <attributes xmi:id="_FrwgE0pbEd2fkP5NpSh0ow" name="ORDER NUMBER OF ITEMS" dataType="INTEGER"/>
+    <attributes xmi:id="_FrwgFEpbEd2fkP5NpSh0ow" name="ORDER NUMBER OF PRODUCTS" dataType="INTEGER"/>
+    <attributes xmi:id="_FrwgFUpbEd2fkP5NpSh0ow" name="ORDER SUBTOTAL COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_FrwgFkpbEd2fkP5NpSh0ow" name="ORDER SHIPPING COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_FrwgF0pbEd2fkP5NpSh0ow" name="ORDER TAX COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_FrwgGEpbEd2fkP5NpSh0ow" name="ORDER TOTAL COST" dataType="DECIMAL(30,2)"/>
+    <attributes xmi:id="_FrwgGUpbEd2fkP5NpSh0ow" name="ORDER PAYMENT METHOD" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgGkpbEd2fkP5NpSh0ow" name="ORDER STATUS" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_1vB78FezEd2kd-nILtvvEA" name="ORDER METHOD CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_DB1xoVe7Ed2kd-nILtvvEA" name="CUSTOMER CREDITCARD ID" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_NbsrUFgREd2kd-nILtvvEA" name="CUSTOMER CODE" dataType="INTEGER" required="true"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_FrwgHkpbEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_NbsrUFgREd2kd-nILtvvEA _FrwgEUpbEd2fkP5NpSh0ow" relationshipEnds="_Er4n4U4TEd2v74W0HyGM3Q _j97-oVgQEd2kd-nILtvvEA"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_DB1xoFe7Ed2kd-nILtvvEA" name="ForeignKey1" attributes="_DB1xoVe7Ed2kd-nILtvvEA _NbsrUFgREd2kd-nILtvvEA" relationshipEnds="_DBsAole7Ed2kd-nILtvvEA"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_tvKig32UEd6YXe6x9Xl9ww" name="ForeignKey2" attributes="_NbsrUFgREd2kd-nILtvvEA" relationshipEnds="_tvKign2UEd6YXe6x9Xl9ww"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_FrwgKkpbEd2fkP5NpSh0ow" name="CUSTOMER" package="_pd_UsEpYEd2fkP5NpSh0ow" relationshipEnds="_FrwgPUpbEd2fkP5NpSh0ow _869CMU4SEd2v74W0HyGM3Q _tvKigX2UEd6YXe6x9Xl9ww">
+    <attributes xmi:id="_FrwgK0pbEd2fkP5NpSh0ow" name="CUSTOMER CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_FrwgLEpbEd2fkP5NpSh0ow" name="CUSTOMER FIRST NAME" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgLUpbEd2fkP5NpSh0ow" name="CUSTOMER LAST NAME" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgLkpbEd2fkP5NpSh0ow" name="CUSTOMER ADDRESS1" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgL0pbEd2fkP5NpSh0ow" name="CUSTOMER CITY" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgMUpbEd2fkP5NpSh0ow" name="CUSTOMER POSTAL ZONE" dataType="VARCHAR(100)"/>
+    <attributes xmi:id="_FrwgMkpbEd2fkP5NpSh0ow" name="CUSTOMER COUNTRY CODE" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgM0pbEd2fkP5NpSh0ow" name="CUSTOMER PHONE NUMBER" dataType="VARCHAR(120)"/>
+    <attributes xmi:id="_FrwgNEpbEd2fkP5NpSh0ow" name="CUSTOMER INFO" dataType="CLOB(32768)"/>
+    <attributes xmi:id="_FrwgNUpbEd2fkP5NpSh0ow" name="CUSTOMER EMAIL" dataType="VARCHAR(128)"/>
+    <attributes xmi:id="_FrwgNkpbEd2fkP5NpSh0ow" name="CUSTOMER GENDER CODE" dataType="DECIMAL(3,0)"/>
+    <attributes xmi:id="_VbR2UO3VEd2v-e__uCGmrw" name="CUSTOMER PROVINCE STATE" dataType="VARCHAR(128)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_FrwgN0pbEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_FrwgK0pbEd2fkP5NpSh0ow" relationshipEnds="_FrwgPUpbEd2fkP5NpSh0ow _869CMU4SEd2v74W0HyGM3Q _tvKigX2UEd6YXe6x9Xl9ww"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_FrwgQkpbEd2fkP5NpSh0ow" name="STATE TAX">
+    <attributes xmi:id="_FrwgQ0pbEd2fkP5NpSh0ow" name="PROV STATE" dataType="VARCHAR(128)" required="true"/>
+    <attributes xmi:id="_FrwgREpbEd2fkP5NpSh0ow" name="TAX RATE" dataType="DECIMAL(30,2)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_FrwgRUpbEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_FrwgQ0pbEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_FrwgRkpbEd2fkP5NpSh0ow" name="CUSTOMER CREDITCARD" package="_pd_UsEpYEd2fkP5NpSh0ow" relationshipEnds="_FrwgPkpbEd2fkP5NpSh0ow _DBsAoVe7Ed2kd-nILtvvEA" relationships="_FrwgPEpbEd2fkP5NpSh0ow">
+    <attributes xmi:id="_FrwgR0pbEd2fkP5NpSh0ow" name="CREDITCARD ID" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_FrwgSEpbEd2fkP5NpSh0ow" name="CUSTOMER CODE" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_FrwgSUpbEd2fkP5NpSh0ow" name="CREDITCARD PRIMARY ACCOUNT NUMBER" dataType="INTEGER"/>
+    <attributes xmi:id="_FrwgSkpbEd2fkP5NpSh0ow" name="CREDITCARD SERVICE CODE" dataType="INTEGER"/>
+    <attributes xmi:id="_FrwgS0pbEd2fkP5NpSh0ow" name="CREDITCARD EXP DATE" dataType="DATE"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_FrwgTEpbEd2fkP5NpSh0ow" name="PrimaryKey" attributes="_FrwgR0pbEd2fkP5NpSh0ow _FrwgSEpbEd2fkP5NpSh0ow" relationshipEnds="_DBsAoVe7Ed2kd-nILtvvEA"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_FrwgTUpbEd2fkP5NpSh0ow" name="CREDITCARD DATA_CUSTOMER_FK" attributes="_FrwgSEpbEd2fkP5NpSh0ow" relationshipEnds="_FrwgPkpbEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_FrwgTkpbEd2fkP5NpSh0ow" name="CUSTOMER INVOICE" package="_pd_UsEpYEd2fkP5NpSh0ow" relationshipEnds="_j97-olgQEd2kd-nILtvvEA" relationships="_j97-oFgQEd2kd-nILtvvEA">
+    <attributes xmi:id="_FrwgUEpbEd2fkP5NpSh0ow" name="ORDER NUMBER" dataType="INTEGER" required="true"/>
+    <attributes xmi:id="_FrwgUUpbEd2fkP5NpSh0ow" name="ORDER INVOICE" dataType="XML"/>
+    <attributes xmi:id="_kTe0AFgUEd2nfKJx9YdYHA" name="CUSTOMER CODE" dataType="INTEGER" required="true"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_j97-o1gQEd2kd-nILtvvEA" name="ForeignKey1" attributes="_kTe0AFgUEd2nfKJx9YdYHA _FrwgUEpbEd2fkP5NpSh0ow" relationshipEnds="_j97-olgQEd2kd-nILtvvEA"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_gpas4H2XEd6YXe6x9Xl9ww" name="PrimaryKey" attributes="_FrwgUEpbEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_cxYfoExPEd20AZv-tAcqVw" name="Entity1"/>
+  <LogicalDataModel:Entity xmi:id="_vsmsIExSEd20AZv-tAcqVw" name="STATE TAX">
+    <attributes xmi:id="_023gMEzDEd2cqKD91Pz7Hw" name="TAX RATE" dataType="DECIMAL(30,2)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_Gk3bUExpEd20AZv-tAcqVw" name="PrimaryKey"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_bhXccE0DEd2bt68cbi2RtQ" name="State Tax"/>
+  <LogicalDataModel:Entity xmi:id="_pf83ME0DEd2bt68cbi2RtQ" name="STATE TAX">
+    <attributes xmi:id="_qzLZoE0DEd2bt68cbi2RtQ" name="PROVINCE STATE" dataType="VARCHAR(50)" required="true"/>
+    <attributes xmi:id="_1RVakE0DEd2bt68cbi2RtQ" name="TAX RATE" dataType="DECIMAL(30,2)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_y7wqUE0DEd2bt68cbi2RtQ" name="PrimaryKey" attributes="_qzLZoE0DEd2bt68cbi2RtQ"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Relationship xmi:id="_Er4n4E4TEd2v74W0HyGM3Q" name="PARTNER ACTIVITY_ORDER_FK" owningEntity="_8QJJAkpUEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_Er4n4U4TEd2v74W0HyGM3Q" entity="_FrwgEEpbEd2fkP5NpSh0ow" key="_FrwgHkpbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_Er4n4k4TEd2v74W0HyGM3Q" verbPhrase="Verb2" entity="_8QJJAkpUEd2fkP5NpSh0ow" key="_Er4n404TEd2v74W0HyGM3Q"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_869CME4SEd2v74W0HyGM3Q" name="PARTNER ACTIVITY_CUSTOMER_FK" owningEntity="_8QJJAkpUEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_869CMU4SEd2v74W0HyGM3Q" cardinality="ONE" entity="_FrwgKkpbEd2fkP5NpSh0ow" key="_FrwgN0pbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_869CMk4SEd2v74W0HyGM3Q" verbPhrase="Verb1" cardinality="ZERO_TO_MANY" entity="_8QJJAkpUEd2fkP5NpSh0ow" key="_869CM04SEd2v74W0HyGM3Q"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_FrwgPEpbEd2fkP5NpSh0ow" name="CREDITCARD_CUSTOMER_FK" owningEntity="_FrwgRkpbEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_FrwgPUpbEd2fkP5NpSh0ow" deleteAction="RESTRICT" cardinality="ONE" entity="_FrwgKkpbEd2fkP5NpSh0ow" key="_FrwgN0pbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_FrwgPkpbEd2fkP5NpSh0ow" cardinality="ZERO_TO_MANY" entity="_FrwgRkpbEd2fkP5NpSh0ow" key="_FrwgTUpbEd2fkP5NpSh0ow"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_DBsAoFe7Ed2kd-nILtvvEA" name="CUSTOMER ORDER_CREDITCARD_FK" relationshipType="NON_IDENTIFYING" owningEntity="_FrwgEEpbEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_DBsAoVe7Ed2kd-nILtvvEA" cardinality="ONE" entity="_FrwgRkpbEd2fkP5NpSh0ow" key="_FrwgTEpbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_DBsAole7Ed2kd-nILtvvEA" verbPhrase="Verb1" minCardinality="" maxCardinality="" cardinality="ZERO_TO_MANY" entity="_FrwgEEpbEd2fkP5NpSh0ow" key="_DB1xoFe7Ed2kd-nILtvvEA"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_j97-oFgQEd2kd-nILtvvEA" name="CUSTOMER INVOICE_CUSTOMER ORDER_FK" relationshipType="NON_IDENTIFYING" existenceOptional="true" owningEntity="_FrwgTkpbEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_j97-oVgQEd2kd-nILtvvEA" entity="_FrwgEEpbEd2fkP5NpSh0ow" key="_FrwgHkpbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_j97-olgQEd2kd-nILtvvEA" verbPhrase="Verb1" cardinality="ZERO_TO_MANY" entity="_FrwgTkpbEd2fkP5NpSh0ow" key="_j97-o1gQEd2kd-nILtvvEA"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_tvKigH2UEd6YXe6x9Xl9ww" name="CUSTOMER ORDER_CUSTOMER_FK" owningEntity="_FrwgEEpbEd2fkP5NpSh0ow">
+    <relationshipEnds xmi:id="_tvKigX2UEd6YXe6x9Xl9ww" cardinality="ONE" entity="_FrwgKkpbEd2fkP5NpSh0ow" key="_FrwgN0pbEd2fkP5NpSh0ow"/>
+    <relationshipEnds xmi:id="_tvKign2UEd6YXe6x9Xl9ww" verbPhrase="Verb2" cardinality="ZERO_TO_MANY" entity="_FrwgEEpbEd2fkP5NpSh0ow" key="_tvKig32UEd6YXe6x9Xl9ww"/>
+  </LogicalDataModel:Relationship>
+</xmi:XMI>
