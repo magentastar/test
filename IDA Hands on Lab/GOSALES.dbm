@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:ilvglnotation="http://www.ilog.com/views/8.5.0/LayoutNotationExtensionDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <LUW:LUWDatabase xmi:id="_zDRF0J90EeeTLfyH__Pf-Q" name="Database" vendor="DB2 UDB" version="V11.1" schemas="_zEmikJ90EeeTLfyH__Pf-Q"/>
-  <DB2Model:DB2Schema xmi:id="_zEmikJ90EeeTLfyH__Pf-Q" name="Schema" tables="_zMyOMJ90EeeTLfyH__Pf-Q _zM7_MJ90EeeTLfyH__Pf-Q _zM7_jZ90EeeTLfyH__Pf-Q _zM7_X590EeeTLfyH__Pf-Q _zM7_u590EeeTLfyH__Pf-Q _zM7_zp90EeeTLfyH__Pf-Q" database="_zDRF0J90EeeTLfyH__Pf-Q">
+  <DB2Model:DB2Schema xmi:id="_zEmikJ90EeeTLfyH__Pf-Q" name="Schema" tables="_zMyOMJ90EeeTLfyH__Pf-Q _zM7_MJ90EeeTLfyH__Pf-Q _zM7_jZ90EeeTLfyH__Pf-Q _zM7_X590EeeTLfyH__Pf-Q _zM7_u590EeeTLfyH__Pf-Q _zM7_zp90EeeTLfyH__Pf-Q _veQo0J-GEeeH2skSPdg4xQ _V0-FAJ-HEeeH2skSPdg4xQ" database="_zDRF0J90EeeTLfyH__Pf-Q">
     <eAnnotations xmi:id="_zFDOgJ90EeeTLfyH__Pf-Q" source="diagram">
       <contents xsi:type="datanotation:DataDiagram" xmi:id="_zGsNQJ90EeeTLfyH__Pf-Q" type="IE_CrowFoot" name="Customer_Customer" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
         <children xmi:id="_zLcxcJ90EeeTLfyH__Pf-Q" element="_zM7_X590EeeTLfyH__Pf-Q">
@@ -588,4 +588,6 @@
       </eAnnotations>
     </constraints>
   </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_veQo0J-GEeeH2skSPdg4xQ" name="FOO" schema="_zEmikJ90EeeTLfyH__Pf-Q"/>
+  <LUW:LUWTable xmi:id="_V0-FAJ-HEeeH2skSPdg4xQ" name="FOO2" schema="_zEmikJ90EeeTLfyH__Pf-Q"/>
 </xmi:XMI>
