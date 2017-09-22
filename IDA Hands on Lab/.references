@@ -1,3 +1,3 @@
-#Tue Jul 08 23:18:41 PDT 2008
-com.ibm.datatools.naming.ui.properties\:glossary_references_key=/IntensiveTraining/GOSALES Glossory.ndm;
-com.ibm.datatools.logical.ui.properties.project\:domain_references_key=
+#Fri Sep 22 17:43:49 CEST 2017
+com.ibm.datatools.naming.ui.properties\:glossary_references_key=/IDA Hands on Lab/GOSALES Glossary.ndm;
+com.ibm.datatools.logical.ui.properties.project\:domain_references_key=/IDA Hands on Lab/GOSALES Privacy Domain Model.ddm;

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore">
+  <LUW:LUWDatabase xmi:id="_IeIKcJ-tEeesIcx3Pkh6-Q" name="Database" vendor="DB2 UDB" version="V11.1" schemas="_IfxJMJ-tEeesIcx3Pkh6-Q"/>
+  <DB2Model:DB2Schema xmi:id="_IfxJMJ-tEeesIcx3Pkh6-Q" name="GOSALES_IDA3" tables="_IlfWsJ-tEeesIcx3Pkh6-Q _Ilf90J-tEeesIcx3Pkh6-Q _IlhL4J-tEeesIcx3Pkh6-Q _Ilgk0J-tEeesIcx3Pkh6-Q _Ilhy8J-tEeesIcx3Pkh6-Q _IlhzA5-tEeesIcx3Pkh6-Q" database="_IeIKcJ-tEeesIcx3Pkh6-Q"/>
+  <LUW:LUWTable xmi:id="_IlfWsJ-tEeesIcx3Pkh6-Q" name="PTNR_CNTCT" schema="_IfxJMJ-tEeesIcx3Pkh6-Q" referencingForeignKeys="_Ilf96p-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWsZ-tEeesIcx3Pkh6-Q" name="PTNR_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlfWsp-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWs5-tEeesIcx3Pkh6-Q" name="PTNR_CO_NAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWtJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWtZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlfWtp-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWt5-tEeesIcx3Pkh6-Q" name="PTNR_FRST_NAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWuJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWuZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlfWup-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWu5-tEeesIcx3Pkh6-Q" name="PTNR_LAST_NAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWvJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWvZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlfWvp-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWv5-tEeesIcx3Pkh6-Q" name="PTNR_CITY" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWwJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWwZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlfWwp-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWw5-tEeesIcx3Pkh6-Q" name="PTNR_ADDR1" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWxJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWxZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlfWxp-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlfWx5-tEeesIcx3Pkh6-Q" name="PTNR_PROV_STATE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlfWyJ-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlfWyZ-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilf9wJ-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf9wZ-tEeesIcx3Pkh6-Q" name="PTNR_POST_ZONE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilf9wp-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="100">
+        <eAnnotations xmi:id="_Ilf9w5-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilf9xJ-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf9xZ-tEeesIcx3Pkh6-Q" name="PTNR_CTRY_CODE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilf9xp-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilf9x5-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilf9yJ-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf9yZ-tEeesIcx3Pkh6-Q" name="PTNR_INFO" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_Ilf9yp-tEeesIcx3Pkh6-Q" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf9y5-tEeesIcx3Pkh6-Q" name="ORD_NBR" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilf9zJ-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf9zZ-tEeesIcx3Pkh6-Q" name="PTNR_SALES" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilf9zp-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Ilf9z5-tEeesIcx3Pkh6-Q" name="PTNR_CNTCT_PK" members="_Ilf9y5-tEeesIcx3Pkh6-Q _IlfWsZ-tEeesIcx3Pkh6-Q" ForeignKey="_Ilf96p-tEeesIcx3Pkh6-Q"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_Ilf90J-tEeesIcx3Pkh6-Q" name="PTNR_ACTY" schema="_IfxJMJ-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf90Z-tEeesIcx3Pkh6-Q" name="PTNR_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilf90p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf905-tEeesIcx3Pkh6-Q" name="ORD_NBR" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilf91J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf91Z-tEeesIcx3Pkh6-Q" name="ORD_STOT_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilf91p-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf915-tEeesIcx3Pkh6-Q" name="ORD_SHIP_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilf92J-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf92Z-tEeesIcx3Pkh6-Q" name="ORD_TAX_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilf92p-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf925-tEeesIcx3Pkh6-Q" name="ORD_TOT_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilf93J-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf93Z-tEeesIcx3Pkh6-Q" name="ORD_STAT" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilf93p-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilf935-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilf94J-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf94Z-tEeesIcx3Pkh6-Q" name="PTNR_INV" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_Ilf94p-tEeesIcx3Pkh6-Q" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf945-tEeesIcx3Pkh6-Q" name="CUST_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilf95J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilf95Z-tEeesIcx3Pkh6-Q" name="PTNR_CUST_CODE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilf95p-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_Ilf955-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilf96J-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Ilf96Z-tEeesIcx3Pkh6-Q" name="PTNR_ACTY_PK" members="_Ilf905-tEeesIcx3Pkh6-Q _Ilf90Z-tEeesIcx3Pkh6-Q _Ilf945-tEeesIcx3Pkh6-Q"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_Ilf96p-tEeesIcx3Pkh6-Q" name="PTNR_ACTY_PTNR_CNTCT_FK" members="_Ilf905-tEeesIcx3Pkh6-Q _Ilf90Z-tEeesIcx3Pkh6-Q" onDelete="RESTRICT" uniqueConstraint="_Ilf9z5-tEeesIcx3Pkh6-Q" referencedTable="_IlfWsJ-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_Ilf965-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_Ilf97J-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_Ilf97Z-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_Ilf97p-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_Ilf975-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_Ilf98J-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_Ilf98Z-tEeesIcx3Pkh6-Q" name="PTNR_ACTY_CUST_FK" members="_Ilf945-tEeesIcx3Pkh6-Q" uniqueConstraint="_Ilgk_5-tEeesIcx3Pkh6-Q" referencedTable="_Ilgk0J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_Ilf98p-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_Ilf985-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_Ilf99J-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_Ilf99Z-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_Ilf99p-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_Ilf995-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_Ilf9-J-tEeesIcx3Pkh6-Q" name="PTNR_ACTY_CUST_ORD_FK" members="_Ilf945-tEeesIcx3Pkh6-Q _Ilf905-tEeesIcx3Pkh6-Q" uniqueConstraint="_IlhL_5-tEeesIcx3Pkh6-Q" referencedTable="_IlhL4J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_Ilf9-Z-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_Ilf9-p-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_Ilf9-5-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_Ilf9_J-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_Ilf9_Z-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_Ilf9_p-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value="Verb2"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_Ilgk0J-tEeesIcx3Pkh6-Q" name="CUST" schema="_IfxJMJ-tEeesIcx3Pkh6-Q" referencingForeignKeys="_Ilf98Z-tEeesIcx3Pkh6-Q _IlhMB5-tEeesIcx3Pkh6-Q _Ilhy_J-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk0Z-tEeesIcx3Pkh6-Q" name="CUST_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilgk0p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk05-tEeesIcx3Pkh6-Q" name="CUST_FRST_NAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk1J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk1Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk1p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk15-tEeesIcx3Pkh6-Q" name="CUST_LAST_NAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk2J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk2Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk2p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk25-tEeesIcx3Pkh6-Q" name="CUST_ADDR1" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk3J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk3Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk3p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk35-tEeesIcx3Pkh6-Q" name="CUST_CITY" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk4J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk4Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk4p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk45-tEeesIcx3Pkh6-Q" name="CUST_POST_ZONE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk5J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="100">
+        <eAnnotations xmi:id="_Ilgk5Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk5p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk55-tEeesIcx3Pkh6-Q" name="CUST_CTRY_CODE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk6J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk6Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk6p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk65-tEeesIcx3Pkh6-Q" name="CUST_PHN_NBR" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk7J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="120">
+        <eAnnotations xmi:id="_Ilgk7Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk7p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk75-tEeesIcx3Pkh6-Q" name="CUST_INFO" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk8J-tEeesIcx3Pkh6-Q" name="CLOB" primitiveType="CHARACTER_LARGE_OBJECT" length="32768">
+        <eAnnotations xmi:id="_Ilgk8Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk8p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk85-tEeesIcx3Pkh6-Q" name="CUST_EMAIL" defaultValue="">
+      <eAnnotations xmi:id="_Ilgk9J-tEeesIcx3Pkh6-Q" source="ColumnDomain">
+        <details xmi:id="_Ilgk9Z-tEeesIcx3Pkh6-Q" key="DomainName" value="platform:/resource/IDA Hands on Lab/GOSALES Privacy Domain Model.ddm?/Package1/EMAIL ADDRESS"/>
+      </eAnnotations>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk9p-tEeesIcx3Pkh6-Q" name="CHAR" length="5">
+        <eAnnotations xmi:id="_Ilgk95-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk-J-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk-Z-tEeesIcx3Pkh6-Q" name="CUST_GNDR_CODE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ilgk-p-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="3"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilgk-5-tEeesIcx3Pkh6-Q" name="CUST_PROV_STATE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ilgk_J-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_Ilgk_Z-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_Ilgk_p-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Ilgk_5-tEeesIcx3Pkh6-Q" name="CUST_PK" members="_Ilgk0Z-tEeesIcx3Pkh6-Q" ForeignKey="_Ilf98Z-tEeesIcx3Pkh6-Q _IlhMB5-tEeesIcx3Pkh6-Q _Ilhy_J-tEeesIcx3Pkh6-Q"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_IlhL4J-tEeesIcx3Pkh6-Q" name="CUST_ORD" schema="_IfxJMJ-tEeesIcx3Pkh6-Q" referencingForeignKeys="_Ilf9-J-tEeesIcx3Pkh6-Q _IliaAZ-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL4Z-tEeesIcx3Pkh6-Q" name="ORD_NBR" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL4p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL45-tEeesIcx3Pkh6-Q" name="ORD_DATE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_IlhL5J-tEeesIcx3Pkh6-Q" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL5Z-tEeesIcx3Pkh6-Q" name="ORD_NBR_OF_ITEMS" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL5p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL55-tEeesIcx3Pkh6-Q" name="ORD_NBR_OF_PRODS" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL6J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL6Z-tEeesIcx3Pkh6-Q" name="ORD_STOT_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_IlhL6p-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL65-tEeesIcx3Pkh6-Q" name="ORD_SHIP_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_IlhL7J-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL7Z-tEeesIcx3Pkh6-Q" name="ORD_TAX_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_IlhL7p-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL75-tEeesIcx3Pkh6-Q" name="ORD_TOT_COST" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_IlhL8J-tEeesIcx3Pkh6-Q" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL8Z-tEeesIcx3Pkh6-Q" name="ORD_PYMT_METH" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlhL8p-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlhL85-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlhL9J-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL9Z-tEeesIcx3Pkh6-Q" name="ORD_STAT" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_IlhL9p-tEeesIcx3Pkh6-Q" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_IlhL95-tEeesIcx3Pkh6-Q" source="LENGTH_SEMANTIC">
+          <details xmi:id="_IlhL-J-tEeesIcx3Pkh6-Q" key="LENGTH_SEMANTIC_TYPE" value=""/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL-Z-tEeesIcx3Pkh6-Q" name="ORD_METH_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL-p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL-5-tEeesIcx3Pkh6-Q" name="CUST_CRDTCRD_ID" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL_J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhL_Z-tEeesIcx3Pkh6-Q" name="CUST_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhL_p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_IlhL_5-tEeesIcx3Pkh6-Q" name="CUST_ORD_PK" members="_IlhL_Z-tEeesIcx3Pkh6-Q _IlhL4Z-tEeesIcx3Pkh6-Q" ForeignKey="_Ilf9-J-tEeesIcx3Pkh6-Q _IliaAZ-tEeesIcx3Pkh6-Q"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_IlhMAJ-tEeesIcx3Pkh6-Q" name="CUST_ORD_CUST_CRDTCRD_FK" members="_IlhL-5-tEeesIcx3Pkh6-Q _IlhL_Z-tEeesIcx3Pkh6-Q" uniqueConstraint="_Ilhy-5-tEeesIcx3Pkh6-Q" referencedTable="_Ilhy8J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_IlhMAZ-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_IlhMAp-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_IlhMA5-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_IlhMBJ-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_IlhMBZ-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_IlhMBp-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_IlhMB5-tEeesIcx3Pkh6-Q" name="CUST_ORD_CUST_FK" members="_IlhL_Z-tEeesIcx3Pkh6-Q" uniqueConstraint="_Ilgk_5-tEeesIcx3Pkh6-Q" referencedTable="_Ilgk0J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_IlhMCJ-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_IlhMCZ-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_IlhMCp-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_IlhMC5-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_IlhMDJ-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_IlhMDZ-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value="Verb2"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_Ilhy8J-tEeesIcx3Pkh6-Q" name="CUST_CRDTCRD" schema="_IfxJMJ-tEeesIcx3Pkh6-Q" referencingForeignKeys="_IlhMAJ-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilhy8Z-tEeesIcx3Pkh6-Q" name="CRDTCRD_ID" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilhy8p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilhy85-tEeesIcx3Pkh6-Q" name="CUST_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilhy9J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilhy9Z-tEeesIcx3Pkh6-Q" name="CRDTCRD_PRIMARY_ACCT_NBR" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilhy9p-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilhy95-tEeesIcx3Pkh6-Q" name="CRDTCRD_SERV_CODE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Ilhy-J-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Ilhy-Z-tEeesIcx3Pkh6-Q" name="CRDTCRD_EXP_DATE" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_Ilhy-p-tEeesIcx3Pkh6-Q" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Ilhy-5-tEeesIcx3Pkh6-Q" name="CUST_CRDTCRD_PK" members="_Ilhy8Z-tEeesIcx3Pkh6-Q _Ilhy85-tEeesIcx3Pkh6-Q" ForeignKey="_IlhMAJ-tEeesIcx3Pkh6-Q"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_Ilhy_J-tEeesIcx3Pkh6-Q" name="CUST_CRDTCRD_CUST_FK" members="_Ilhy85-tEeesIcx3Pkh6-Q" onDelete="RESTRICT" uniqueConstraint="_Ilgk_5-tEeesIcx3Pkh6-Q" referencedTable="_Ilgk0J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_Ilhy_Z-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_Ilhy_p-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_Ilhy_5-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_IlhzAJ-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_IlhzAZ-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_IlhzAp-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_IlhzA5-tEeesIcx3Pkh6-Q" name="CUST_INV" schema="_IfxJMJ-tEeesIcx3Pkh6-Q">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhzBJ-tEeesIcx3Pkh6-Q" name="ORD_NBR" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhzBZ-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhzBp-tEeesIcx3Pkh6-Q" name="ORD_INV" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_IlhzB5-tEeesIcx3Pkh6-Q" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_IlhzCJ-tEeesIcx3Pkh6-Q" name="CUST_CODE" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_IlhzCZ-tEeesIcx3Pkh6-Q" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_IliaAJ-tEeesIcx3Pkh6-Q" name="CUST_INV_PK" members="_IlhzBJ-tEeesIcx3Pkh6-Q"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_IliaAZ-tEeesIcx3Pkh6-Q" name="CUST_INV_CUST_ORD_FK" members="_IlhzCJ-tEeesIcx3Pkh6-Q _IlhzBJ-tEeesIcx3Pkh6-Q" uniqueConstraint="_IlhL_5-tEeesIcx3Pkh6-Q" referencedTable="_IlhL4J-tEeesIcx3Pkh6-Q">
+      <eAnnotations xmi:id="_IliaAp-tEeesIcx3Pkh6-Q" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_IliaA5-tEeesIcx3Pkh6-Q" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_IliaBJ-tEeesIcx3Pkh6-Q" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_IliaBZ-tEeesIcx3Pkh6-Q" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_IliaBp-tEeesIcx3Pkh6-Q" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_IliaB5-tEeesIcx3Pkh6-Q" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+</xmi:XMI>

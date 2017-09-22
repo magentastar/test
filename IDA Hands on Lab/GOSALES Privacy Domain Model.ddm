@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LogicalDataModel="http:///com/ibm/db/models/logical/logical.ecore">
+  <LogicalDataModel:Package xmi:id="_pU8hYJ-rEeesIcx3Pkh6-Q" name="Package1" targetNamespace="GOSALES Privacy Domain Model.ddm" namespaceSupported="true" contents="_ukUwUJ-rEeesIcx3Pkh6-Q _v5biEJ-rEeesIcx3Pkh6-Q _wexq0J-rEeesIcx3Pkh6-Q"/>
+  <LogicalDataModel:AtomicDomain xmi:id="_ukUwUJ-rEeesIcx3Pkh6-Q" name="MONEY" package="_pU8hYJ-rEeesIcx3Pkh6-Q" namespace="GOSALES Privacy Domain Model.ddm/Package1" baseType="CHAR(5)"/>
+  <LogicalDataModel:AtomicDomain xmi:id="_v5biEJ-rEeesIcx3Pkh6-Q" name="EMAIL ADDRESS" package="_pU8hYJ-rEeesIcx3Pkh6-Q" namespace="GOSALES Privacy Domain Model.ddm/Package1" baseType="CHAR(5)">
+    <privacyData xmi:id="_-d_-wJ-rEeesIcx3Pkh6-Q" classification="http://www.ibm.com/nex/classification/confidential" enforcement="http://www.ibm.com/nex/enforcement/required" policyTypeId="http://www.ibm.com/nex/policytype/email" policyId="http://www.ibm.com/nex/policy/randomemail"/>
+  </LogicalDataModel:AtomicDomain>
+  <LogicalDataModel:AtomicDomain xmi:id="_wexq0J-rEeesIcx3Pkh6-Q" name="CREDIT CARD NUMBER" package="_pU8hYJ-rEeesIcx3Pkh6-Q" namespace="GOSALES Privacy Domain Model.ddm/Package1" baseType="CHAR(5)">
+    <privacyData xmi:id="_P7MOYJ-sEeesIcx3Pkh6-Q" classification="http://www.ibm.com/nex/classification/confidential" enforcement="http://www.ibm.com/nex/enforcement/required" policyTypeId="http://www.ibm.com/nex/policytype/ccn" policyId="http://www.ibm.com/nex/policy/randomccnissuer"/>
+  </LogicalDataModel:AtomicDomain>
+</xmi:XMI>
