@@ -1,5 +1,7 @@
 --<ScriptOptions statementTerminator=";"/>
 
+-- THIS IS A THIRD TEST
+
 CREATE SCHEMA "Schema";
 
 CREATE TABLE "Schema"."CUSTOMER" (
